@@ -4,12 +4,12 @@
   "package": "coolaid.drsr.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-  ],
-  "client": [
+    "RaidMixin"
   ],
   "injectors": {
     "defaultRequire": 1
   },
+  "refmap": "DRSR-refmap.json",
   "overwrites": {
     "requireAnnotations": true
   }

@@ -18,11 +18,34 @@ fabricApi {
 }
 
 repositories {
-    // Add repositories to retrieve artifacts from in here.
-    // You should only use this when depending on other mods because
-    // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-    // See https://docs.gradle.org/current/userguide/declaring_repositories.html
-    // for more information about repositories.
+    mavenCentral()
+
+    maven { url 'https://mvnrepository.com/artifact/me.shedaniel.cloth/cloth-config-fabric'}
+    maven { url 'https://maven.architectury.dev/'}
+
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = uri("https://api.modrinth.com/maven")
+            }
+        }
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
+
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Terraformers"
+                url = uri("https://maven.terraformersmc.com/")
+            }
+        }
+        filter {
+            includeGroup "com.terraformersmc"
+        }
+    }
 }
 
 dependencies {
@@ -32,6 +55,12 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    modImplementation "com.terraformersmc:modmenu:${property("modmenu_version")}"
+    modImplementation 'me.shedaniel.cloth:cloth-config-fabric:19.0.147'
+    include 'me.shedaniel.cloth:cloth-config-fabric:19.0.147'
+    include "com.terraformersmc:modmenu:${property("modmenu_version")}"
+
 }
 
 processResources {

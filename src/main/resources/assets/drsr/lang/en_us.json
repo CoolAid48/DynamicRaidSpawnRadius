@@ -1,6 +1,6 @@
 {
-  "text.autoconfig.drsr.title": "Dynamic Raid Spawn Radius Configuring",
-  "text.autoconfig.drsr.option.raidSpawnRadius": "Dynamic Raid Spawn Radius (Vanilla - 96 Blocks",
-  "text.autoconfig.drsr.option.raidSpawnRadius.@Tooltip": "abra is a nerd"
+  "text.autoconfig.drsr.title": "Dynamic Raid Spawn Radius Config",
+  "text.autoconfig.drsr.option.raidSpawnRadius": "Raid Spawn Radius",
+  "text.autoconfig.drsr.option.raidSpawnRadius.@Tooltip": "Vanilla (Default) = 96 Blocks"
 
 }
