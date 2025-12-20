@@ -42,10 +42,10 @@
     "drsr.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.17.0",
+    "fabricloader": ">=0.18.0",
     "fabric": "*",
-    "minecraft": "~1.21.9",
-    "cloth-config2": ">=15.0.0",
-    "modmenu": ">=11.0.0"
+    "minecraft": "~1.21.11",
+    "cloth-config2": ">=21.11.151",
+    "modmenu": ">=17.0.0-alpha.1"
   }
 }

@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '1.11-SNAPSHOT'
+    id 'fabric-loom' version '1.13-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -57,8 +57,8 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     modImplementation "com.terraformersmc:modmenu:${property("modmenu_version")}"
-    modImplementation 'me.shedaniel.cloth:cloth-config-fabric:19.0.147'
-    include 'me.shedaniel.cloth:cloth-config-fabric:19.0.147'
+    modImplementation 'me.shedaniel.cloth:cloth-config-fabric:21.11.151'
+    include 'me.shedaniel.cloth:cloth-config-fabric:21.11.151'
     include "com.terraformersmc:modmenu:${property("modmenu_version")}"
 
 }
