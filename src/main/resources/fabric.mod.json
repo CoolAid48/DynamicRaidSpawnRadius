@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "dynamic-raid-spawn-radius",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Dynamic Raid Spawn Radius",
   "description": "Allows changing the spawn radius of raid waves in-game via a simple config!",
   "authors": [
@@ -11,7 +11,7 @@
     "Mod icon by pandalexi12"
   ],
   "contact": {
-    "homepage": "https://modrinth.com/mod/drsr",
+    "homepage": "https://coolaid.live/",
     "issues": "https://github.com/CoolAid48/DynamicRaidSpawnRadius/issues",
     "sources": "https://github.com/CoolAid48/DynamicRaidSpawnRadius"
   },
@@ -29,23 +29,17 @@
       "coolaid.drsr.compat.ModMenu"
     ]
   },
-  "custom" : {
-    "fabric-renderer-api-v1:contains_renderer" : true,
-    "modmenu" : {
-      "links" : {
-        "modmenu.donate" : "https://ko-fi.com/coolaid48",
-        "modmenu.discord" : "https://discord.com/invite/J2SGshKNah"
+  "custom": {
+    "fabric-renderer-api-v1:contains_renderer": true,
+    "modmenu": {
+      "links": {
+        "modmenu.donate": "https://ko-fi.com/coolaid48",
+        "modmenu.discord": "https://discord.com/invite/J2SGshKNah",
+        "modmenu.modrinth": "https://modrinth.com/mod/drsr"
       }
     }
   },
   "mixins": [
     "drsr.mixins.json"
-  ],
-  "depends": {
-    "fabricloader": ">=0.18.0",
-    "fabric": "*",
-    "minecraft": "~1.21.11",
-    "cloth-config2": ">=21.11.151",
-    "modmenu": ">=17.0.0-alpha.1"
-  }
+  ]
 }
