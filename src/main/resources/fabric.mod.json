@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "dynamic-raid-spawn-radius",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "name": "Dynamic Raid Spawn Radius",
   "description": "Allows changing the spawn radius of raid waves in-game via a simple config!",
   "authors": [
