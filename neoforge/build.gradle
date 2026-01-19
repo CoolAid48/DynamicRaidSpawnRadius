@@ -25,15 +25,48 @@ configurations {
 }
 
 repositories {
+    mavenCentral()
+
     maven {
         name = 'NeoForged'
         url = 'https://maven.neoforged.net/releases'
+    }
+
+    maven { url 'https://mvnrepository.com/artifact/me.shedaniel.cloth/cloth-config-fabric'}
+    maven { url 'https://maven.architectury.dev/'}
+
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = uri("https://api.modrinth.com/maven")
+            }
+        }
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
+
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Terraformers"
+                url = uri("https://maven.terraformersmc.com/")
+            }
+        }
+        filter {
+            includeGroup "com.terraformersmc"
+        }
     }
 }
 
 dependencies {
     neoForge "net.neoforged:neoforge:$rootProject.neoforge_version"
 
+    modImplementation "com.terraformersmc:modmenu:${property("modmenu_version")}"
+    modImplementation 'me.shedaniel.cloth:cloth-config-fabric:19.0.147'
+    include 'me.shedaniel.cloth:cloth-config-fabric:19.0.147'
+    include "com.terraformersmc:modmenu:${property("modmenu_version")}"
 
     common(project(path: ':common', configuration: 'namedElements')) { transitive false }
     shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')

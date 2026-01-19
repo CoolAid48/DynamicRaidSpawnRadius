@@ -1,32 +1,20 @@
 modLoader = "javafml"
 loaderVersion = "[2,)"
-#issueTrackerURL = ""
+issueTrackerURL = "https://github.com/CoolAid48/NoSignGUI/issues"
 license = "MIT"
 
 [[mods]]
 modId = "drsr"
-version = "${version}"
+version = "2.0.0"
 displayName = "Dynamic Raid Spawn Radius"
 authors = "CoolAid48"
+
+credits = "Mod icon by pandalexi12"
+
 description = '''
-
+Allows changing the spawn radius of raid waves in-game via a simple config!
 '''
-#logoFile = ""
-
-[[dependencies.drsr]]
-modId = "neoforge"
-type = "required"
-versionRange = "[21,)"
-ordering = "NONE"
-side = "BOTH"
-
-[[dependencies.drsr]]
-modId = "minecraft"
-type = "required"
-versionRange = "[1.21.11,)"
-ordering = "NONE"
-side = "BOTH"
-
+logoFile = 'assets/drsr/icon.png'
 
 [[mixins]]
 config = "drsr.mixins.json"

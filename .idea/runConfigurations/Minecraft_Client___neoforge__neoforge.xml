@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Minecraft Client (:neoforge)" type="Application" factoryName="Application">
+    <option name="ALTERNATIVE_JRE_PATH" value="graalvm-22" />
+    <envs>
+      <env name="MOD_CLASSES" value="main%%C:\Users\CoolAid\Desktop\drsr-multiloader\neoforge\build\resources\main;main%%C:\Users\CoolAid\Desktop\drsr-multiloader\neoforge\build\classes\java\main;main%%C:\Users\CoolAid\Desktop\drsr-multiloader\neoforge\out\production\classes;main%%C:\Users\CoolAid\Desktop\drsr-multiloader\neoforge\out\production\resources" />
+    </envs>
+    <option name="MAIN_CLASS_NAME" value="dev.architectury.transformer.TransformerRuntime" />
+    <module name="drsr.neoforge.main" />
+    <shortenClasspath name="ARGS_FILE" />
+    <option name="VM_PARAMETERS" value="-Dfabric.dli.config=C:\Users\CoolAid\Desktop\drsr-multiloader\neoforge\.gradle\loom-cache\launch.cfg -Dfabric.dli.env=client --add-opens java.base/java.lang.invoke=ALL-UNNAMED --add-exports jdk.naming.dns/com.sun.jndi.dns=java.naming -Dfabric.dli.main=net.neoforged.fml.startup.Client -Darchitectury.main.class=C:\Users\CoolAid\Desktop\drsr-multiloader\neoforge\.gradle\architectury\.main_class -Darchitectury.runtime.transformer=C:\Users\CoolAid\Desktop\drsr-multiloader\neoforge\.gradle\architectury\.transforms -Darchitectury.properties=C:\Users\CoolAid\Desktop\drsr-multiloader\neoforge\.gradle\architectury\.properties -Djdk.attach.allowAttachSelf=true -javaagent:C:\Users\CoolAid\Desktop\drsr-multiloader\.gradle\architectury\architectury-transformer-agent.jar" />
+    <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/neoforge/run/" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

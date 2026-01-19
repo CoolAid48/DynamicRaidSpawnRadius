@@ -3,7 +3,7 @@ package coolaid.drsr.fabric;
 import coolaid.drsr.DynamicRaidSpawnRadius;
 import net.fabricmc.api.ModInitializer;
 
-public final class DynamicRaidSpawnRadiusFabric implements ModInitializer {
+public final class DRSRFabric implements ModInitializer {
     @Override
     public void onInitialize() {
         // This code runs as soon as Minecraft is in a mod-load-ready state.
