@@ -38,6 +38,11 @@
       }
     }
   },
+  "depends": {
+    "fabricloader": ">=0.17.3",
+    "minecraft": "~1.21.6",
+    "fabric-api": "*"
+  },
   "mixins": [
     "drsr.mixins.json"
   ]
