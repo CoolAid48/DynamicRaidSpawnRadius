@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "drsr",
+  "version": "${version}",
+  "name": "Dynamic Raid Spawn Radius",
+  "description": "",
+  "authors": [
+    "CoolAid48"
+  ],
+  "contact": {
+    "homepage": "https://coolaid.live/"
+  },
+  "license": "MIT",
+  "icon": "assets/drsr/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "coolaid.drsr.fabric.DynamicRaidSpawnRadiusFabric"
+    ],
+    "client": [
+      "coolaid.drsr.fabric.client.DrsrFabricClient"
+    ]
+  },
+  "mixins": [
+    "drsr.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
