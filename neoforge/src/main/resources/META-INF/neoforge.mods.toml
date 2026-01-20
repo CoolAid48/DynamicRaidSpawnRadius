@@ -5,11 +5,11 @@ license = "MIT"
 
 [[mods]]
 modId = "drsr"
-version = "2.0.0"
+version = "2.0.1"
 displayName = "Dynamic Raid Spawn Radius"
 authors = "CoolAid48"
 
-credits = "Mod icon by pandalexi12"
+credits = "Mod icon by pandalexi12 and CoolAid48"
 
 description = '''
 Allows changing the spawn radius of raid waves in-game via a simple config!
